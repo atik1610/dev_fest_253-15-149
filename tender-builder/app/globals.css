@@ -1,0 +1,25 @@
+:root{--ink:#16233a;--paper:#fbfaf7;--line:#d9d6cc;--ok:#1d7a46;--warn:#b25e00;--bad:#b3261e;--mute:#6b7280}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "Noto Sans Bengali","Segoe UI",system-ui,sans-serif}
+main{max-width:980px;margin:0 auto;padding:20px 16px 80px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-bottom:3px solid var(--ink);padding-bottom:10px}
+h1{margin:0;font-size:1.7rem}h2{font-size:1.1rem;margin:0 0 10px}
+section{margin-top:24px;padding:16px;border:1px solid var(--line);background:#fff}
+button,select,input{font:inherit}
+button{cursor:pointer;border:1px solid var(--ink);background:#fff;padding:4px 12px;margin-left:8px}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
+.lang button{margin:0 0 0 -1px}.lang .on{background:var(--ink);color:#fff}
+.primary{background:var(--ink);color:#fff;padding:10px 20px;margin:0;font-weight:600}
+.primary:disabled{background:#c9c6bd;border-color:#c9c6bd;cursor:not-allowed}
+.muted{color:var(--mute);font-size:.88rem}
+.tender{display:grid;grid-template-columns:max-content 1fr;gap:2px 16px;margin:12px 0 0}.tender dt{color:var(--mute)}.tender dd{margin:0}
+.files{list-style:none;padding:0}.files li{padding:6px 0;border-bottom:1px solid var(--line)}
+table{width:100%;border-collapse:collapse}td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.n{width:32px;color:var(--mute)}
+select{max-width:260px;padding:4px}.exp{display:block;margin-top:6px}
+.badge{display:inline-block;padding:2px 10px;border-radius:99px;font-size:.88rem;font-weight:600;background:#eee}
+.badge.ok{background:#dff3e6;color:var(--ok)}.badge.missing,.badge.expired{background:#fbe1df;color:var(--bad)}
+.badge.needed{background:#ffecd1;color:var(--warn)}.badge.optional{background:#e8e8e8;color:var(--mute)}.badge.dup{background:#ffecd1;color:var(--warn);margin-left:8px}
+.err{margin-top:12px;padding:10px;background:#fbe1df;color:var(--bad);border:1px solid var(--bad)}
+.gen{margin-top:16px}.why{color:var(--bad);margin-bottom:10px}.ok{color:var(--ok);font-weight:600}
+@media(max-width:640px){td{display:block;border:0}tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}}
